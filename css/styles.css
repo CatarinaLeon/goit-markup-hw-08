@@ -3,63 +3,144 @@
 /* Белый #FFFFFF */
 /* Акцент #2196F3 */
 /* Вторичный цвет фона #F5F4FA */
+/* background: #2F303A; */
+/* background: #E5E5E5; */
 
 :root {
-    --primary-text-color:#757575;
-    --title-text-color: #212121;
-    --accent-color:#2196F3;
-    --primary-white-color: #FFFFFF;
-
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --primary-bg-color: #f5f4fa;
 }
 
 .page {
-  background-color: var(--primary-bg-color); 
-  color: var(--primary-text-color) ;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-
 .logo {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.web {
+  color: var(--accent-color);
 }
 
 /* Site nav */
-
 .site-nav .link {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 .site-nav .link.current {
-    color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* Aut-nav */
+.aut-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+.aut-nav .link:hover,
+.aut-nav .link:focus {
+  color: var(--accent-color);
 }
 /* Hero */
+.hero {
+  background: #2f303a;
+}
 .hero-title {
-    color: var(--title-text-color);
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
 }
 
 /* Section */
 .section-title {
-    color:var(--title-text-color);
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 /* Feature */
 .feature-list .title {
-    color:var(--title-text-color);
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Command */
 .command-list .title {
-    color:var(--title-text-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
-
+.command-list .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 /* Button */
 .button {
-color: var(--primary-white-color);
-background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Button Portfolio */
+.button-list .link {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+.button-list .link:hover,
+.button-list .link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* Portfolio */
+.portfolio-list .title {
+  color: var(--title-text-color);
+}
+/* Footer */
+.fond {
+  background: #2f303a;
+}
+.footer-aut-nav .link {
+  color: var(--footer-text-color);
+}
+.address {
+  color: var(--primary-white-color);
 }
