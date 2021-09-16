@@ -32,6 +32,7 @@ ul {
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 .web {
   color: var(--accent-color);
@@ -44,6 +45,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -60,6 +62,7 @@ ul {
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .aut-nav .link:hover,
 .aut-nav .link:focus {
@@ -90,6 +93,7 @@ ul {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .feature-list .text {
   font-size: 14px;
@@ -156,11 +160,14 @@ ul {
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 .footer-aut-nav .link {
   color: var(--footer-text-color);
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
 }
 .footer-aut-nav .link:hover,
 .footer-aut-nav .link:focus {
@@ -170,4 +177,5 @@ ul {
   color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
 }
