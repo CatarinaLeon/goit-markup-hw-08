@@ -21,20 +21,13 @@
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 ul {
   list-style: none;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1200px;
-  outline: 2px solid tomato;
-}
 /* Logo */
 .logo {
   color: var(--title-text-color);
@@ -98,12 +91,23 @@ ul {
   text-align: center;
 }
 
-/* Section */
-.section {
-  padding-top: 0;
-  padding-bottom: 0;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 1230px;
   outline: 2px solid tomato;
 }
+
+/* Section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid tomato;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
