@@ -332,7 +332,37 @@ img {
   border: 1px solid var(--card-frame-color);
   box-sizing: border-box;
 }
+/* ICON */
+.cont-icon {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.social-list {
+  display: flex;
+}
+}
+.social-link {
+  /* display: flex; */
+  /* padding-left: 32px;
+  padding-right: 32px; */
 
+}
+
+.icon {
+  /* display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8; */
+}
 /* Footer */
 .fond {
   padding: 60px 0px;
