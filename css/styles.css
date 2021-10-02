@@ -20,6 +20,7 @@
   --background-card: #ffffff;
   --card-frame-color: #eeeeee;
   --bottom-line-color: #ececec;
+  --primery-social-color: #afb1b8;
 }
 
 .page {
@@ -72,7 +73,7 @@ img {
   align-items: center;
 }
 
-/* Logo */
+/* -------Logo------- */
 .logo {
   color: var(--title-text-color);
   font-family: Raleway, cursive;
@@ -89,10 +90,6 @@ img {
   display: flex;
   margin-left: 93px;
 }
-
-/* .site-nav .item {
-  margin-right: 50px;
-} */
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -130,10 +127,8 @@ img {
 .aut-nav .item + .item {
   margin-left: 50px;
 }
-
 .aut-nav-link {
   color: var(--primary-text-color);
-  fill: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
@@ -142,47 +137,24 @@ img {
   display: flex;
   align-items: center;
 }
-.icon-envelope {
-  margin-right: 10px;
-  fill: var(--primary-text-color);
+.aut-nav-link:hover,
+.aut-nav-link:focus {
+  color: var(--accent-color);
 }
-.icon-smartphone {
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-.aut-nav .aut-nav-link:hover,
-.aut-nav .aut-nav-link:focus {
+.aut-nav .aut-nav-link:hover .icon,
+.aut-nav .aut-nav-link:focus .icon {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-/* .icon-envelope:hover,
-.icon-envelope:focus {
-  fill: var(--accent-color);
-} */
 
-/* -----Пример---- */
-/* .icon-envelope::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
+.envelope {
   margin-right: 10px;
-  background-image: url(../images/envelope.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: var(--primary-text-color);
 }
-
-.icon-smartphone::before {
-  display: inline-block;
-  content: "";
-  width: 10px;
-  height: 16px;
+.smartphone {
   margin-right: 10px;
-  background-image: url(../images/smrtphone.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
+  fill: var(--primary-text-color);
+}
 
 /*--------- Hero------- */
 .hero {
@@ -218,7 +190,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Section */
+/* -------Section------- */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -236,7 +208,7 @@ img {
   text-align: center;
 }
 
-/* Feature */
+/* -------Feature------- */
 .section-feature {
   padding-top: 94px;
   padding-bottom: 0;
@@ -272,7 +244,7 @@ img {
   margin-right: 30px;
 }
 
-/* Command */
+/* -------Command------- */
 
 .command {
   background: var(--primary-bg-color);
@@ -310,7 +282,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* Button */
+/* -------Button-------- */
 .button {
   border-radius: 4px;
   padding: 10px 32px;
@@ -362,7 +334,7 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-/* Portfolio */
+/*------- Portfolio------- */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -374,7 +346,13 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
+.portfolio-list .link:hover,
+.portfolio-list .link:focus {
+  border: 1px solid var(--card-frame-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
 .portfolio-list .link:nth-child(3n) {
   margin-right: 0;
 }
@@ -401,7 +379,8 @@ img {
   border: 1px solid var(--card-frame-color);
   box-sizing: border-box;
 }
-/* ICON */
+
+/* -------ICON------- */
 
 .cont-icon {
   height: 120px;
@@ -432,12 +411,7 @@ img {
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
-  /* 
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
+  fill: var(--primery-social-color);
 }
 
 .social-icon:last-child {
@@ -452,11 +426,6 @@ img {
 .social-icon:focus .icon {
   fill: var(--primary-white-color);
 }
-/* .social-icon:hover .icon,
-.social--icon:focus .icon {
-  background-color: var(--background-card);
-} */
-
 .client-list {
   display: flex;
 }
@@ -470,11 +439,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--primary-white-color); */
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--primery-social-color);
   border-radius: 4px;
   margin-bottom: 0;
-  fill: #afb1b8;
+  fill: var(--primery-social-color);
 }
 .client-icon:last-child {
   margin-right: 0;
@@ -570,6 +538,3 @@ img {
 .footer-icon:focus {
   background-color: var(--accent-color);
 }
-/* .ft-icon {
-  fill: var(--background-card);
-} */
