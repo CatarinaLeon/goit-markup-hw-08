@@ -56,8 +56,15 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="button hiro-btn" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
       </section>
 
       <!-- ОСОБЕННОСТИ -->
@@ -129,6 +136,7 @@
                 alt="программист работает за столом в офисе"
                 width="370"
               />
+              <p class="description-work">Десктопные приложения</p>
             </li>
             <li class="item">
               <img
@@ -137,6 +145,7 @@
                 alt="Интерфейс мобильные телефоны"
                 width="370"
               />
+              <p class="description-work">Мобильные приложения</p>
             </li>
             <li class="item">
               <img
@@ -145,6 +154,7 @@
                 alt="веб-дизайн с рабочим графическим планшетом"
                 width="370"
               />
+              <p class="description-work">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -418,5 +428,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal modal-close">
+        <p></p>
+        <button class="button-close" data-modal-close>
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
