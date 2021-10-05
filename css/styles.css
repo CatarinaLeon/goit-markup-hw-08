@@ -694,8 +694,13 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
+  outline: none;
 }
-
+.input-email:focus {
+  border: 1px solid var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
 .icon-plane {
   position: absolute;
   left: 75%;
