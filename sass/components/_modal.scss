@@ -15,9 +15,7 @@
   &-text {
     margin-top: 0;
     margin-bottom: 12px;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    @include font(20px, 23px, 700);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -40,8 +38,7 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    @extend %transition;
   }
 }
 
@@ -58,12 +55,10 @@
   outline: none;
   &:focus {
     border: 1px solid var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    @extend %transition;
     + .form-icon {
       fill: var(--accent-color);
-      transition-duration: 250ms;
-      transition-timing-function: var(--timing-function);
+      @extend %transition;
     }
   }
 }
@@ -97,8 +92,7 @@
   resize: none;
   &:focus {
     border: 1px solid var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    @extend %transition;
   }
   &::placeholder {
     font-size: 14px;
@@ -139,11 +133,14 @@
   justify-content: center;
 }
 
-.form-checkbox:checked + .check-text > .check-item {
-  background-color: var(--accent-color);
-  border-color: transparent;
+.form-checkbox {
+  &:checked {
+    + .check-text > .check-item {
+      background-color: var(--accent-color);
+      border-color: transparent;
+    }
+  }
 }
-
 .form-btn {
   display: block;
   margin: 0 auto;

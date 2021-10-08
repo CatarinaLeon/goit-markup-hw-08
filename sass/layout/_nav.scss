@@ -1,33 +1,34 @@
-.main-nav {
+.header__container {
   display: flex;
   align-items: center;
 }
-
-.site-nav {
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.header__nav-list {
   display: flex;
   margin-left: 93px;
-  position: relative;
 }
-
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav .link {
+.header__nav-list .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 500);
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
-.site-nav .link.current::after {
+.header__nav-item {
+  position: relative;
+}
+.header__nav-item .link.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -40,48 +41,47 @@
   border-radius: 2px;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+.header__nav-list .link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    @extend %transition;
+  }
 }
-.site-nav .link.current {
+.header__nav-list .link.current {
   color: var(--accent-color);
 }
-.aut-nav {
+.header__contacts {
   display: flex;
   margin-left: auto;
 }
 
-.aut-nav .item + .item {
+.header__contacts-item {
   margin-left: 50px;
 }
-.aut-nav-link {
+.header__contacts-link {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14px;
+  @include font(14px, 1.14, 500);
   letter-spacing: 0.02em;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
-.aut-nav-link:hover,
-.aut-nav-link:focus {
-  color: var(--accent-color);
-
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+.header__contacts-link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    @extend %transition;
+  }
 }
-.aut-nav .aut-nav-link:hover .icon,
-.aut-nav .aut-nav-link:focus .icon {
-  color: var(--accent-color);
-  fill: var(--accent-color);
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+.header__contacts .header__contacts-link {
+  &:hover .header__contacts-icon,
+  &:focus .header__contacts-icon {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+    @extend %transition;
+  }
 }
 .envelope {
   margin-right: 10px;

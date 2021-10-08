@@ -22,10 +22,11 @@
   margin: 0;
 }
 
-.footer-aut-nav .item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-aut-nav .item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
-
 .footer-aut-nav .link {
   color: var(--footer-text-color);
 
@@ -34,12 +35,12 @@
   text-decoration: none;
   font-style: normal;
 }
-.footer-aut-nav .link:hover,
-.footer-aut-nav .link:focus {
-  color: var(--accent-color);
-
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+.footer-aut-nav .link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    @extend %transition;
+  }
 }
 
 .address-list {
@@ -59,9 +60,7 @@
   margin-left: 70px;
 }
 .footer-right-container h2 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 700);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -80,14 +79,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer-icon:hover,
-.footer-icon:focus {
-  background-color: var(--accent-color);
-
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    @extend %transition;
+  }
 }
 
 .footer-free-container {
@@ -97,9 +93,7 @@
 .footer-free-container h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  @include font(14px, 16px, 700);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -121,9 +115,7 @@
   border: 1px solid transparent;
 
   font-family: Roboto;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(16px, 1.87, 700);
   text-align: center;
   cursor: pointer;
 }
@@ -140,10 +132,11 @@
   background-color: inherit;
   outline: none;
 }
-.input-email:focus {
-  border: 1px solid var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+.input-email {
+  &:focus {
+    border: 1px solid var(--accent-color);
+    @extend %transition;
+  }
 }
 .icon-plane {
   position: absolute;
