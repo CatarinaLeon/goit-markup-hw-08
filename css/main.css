@@ -557,8 +557,10 @@ body {
 .menu-container .menu-toggle {
   position: absolute;
   top: 0;
-  right: 10;
+  right: 0;
   z-index: 150;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .menu-container .menu-toggle:hover,
