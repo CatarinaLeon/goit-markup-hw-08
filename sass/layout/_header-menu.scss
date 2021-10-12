@@ -31,6 +31,9 @@
 
   color: #757575;
 }
+.menu__contacts-link.current {
+  color: var(--accent-color);
+}
 .menu__contacts {
   margin-top: 0;
   margin-bottom: 64px;
